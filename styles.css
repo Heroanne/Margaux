@@ -22,9 +22,6 @@ body {
   width: 44px;
 }
 
-
-
-
 /* NAVBAR */
 header {
   top: 0;
@@ -72,22 +69,6 @@ div ul li a:hover {
   justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
@@ -131,8 +112,6 @@ div ul li a:hover {
   height: 0;
   z-index: -100;
 }
-
-
 
 
 /* IMAGES */
@@ -201,53 +180,10 @@ div ul li a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 100vh */
 .all-screan {
   height: 100vh;
 }
-
 
 
 /* FOOTER */
@@ -304,25 +240,6 @@ footer img {
 .lien {
   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* GOOGLE MAP */
 .feature.map {
