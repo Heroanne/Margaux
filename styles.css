@@ -25,9 +25,6 @@ body {
 
 
 
-
-/* Nav bar active */
-
 /* NAVBAR */
 header {
   top: 0;
@@ -76,8 +73,6 @@ div ul li a:hover {
 }
 
 
-
-/* TEST SOULIGNE */
 
 
 
@@ -129,6 +124,8 @@ div ul li a:hover {
   text-align: center;
 }
 
+
+/* VIDEO */
 .videoWrapper {
   position: relative;
   height: 0;
@@ -139,13 +136,110 @@ div ul li a:hover {
 
 
 /* IMAGES */
-.flex-column {
-  max-width: 260px;
+.img-container-grid {
+  display:flex;
+  flex-wrap: wrap;
 }
 
-img {
-  margin: 5px;
+.small-square {
+  max-width:20%;
+  height:auto;
+  flex:0 0 20%;
+  padding-top:20%;
+  display:grid;
+  position:relative;
 }
+
+.horizontal-rectangle {
+  max-width: 40%;
+  flex: 0 0 40%;
+  padding-top:20%;
+  position:relative;
+}
+
+.vertical-rectangle {
+  max-width: 20%;
+  flex: 0 0 20%;
+  padding-top:40%;
+  position:relative;
+}
+
+.big-square {
+  max-width:40%;
+  height:auto;
+  flex:0 0 40%;
+  padding-top:40%;
+  display:grid;
+  position:relative;
+}
+
+.big-square-4 {
+  max-width:40%;
+  height:auto;
+  flex:0 0 40%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.inner-square {
+  max-width:50%;
+  flex: 0 0 50%;
+  height:50%;
+  position:relative;
+}
+
+
+.img-grid-c {
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  position:absolute;
+  object-fit:cover;
+  object-position:center;
+  padding:2.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
