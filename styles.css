@@ -54,9 +54,6 @@ div ul li a {
 
 div ul li a.active,
 div ul li a:hover {
-  /* background-color: #2c3639;
-  color: #ffffff;
-  border-radius: .5rem; */
   text-decoration: underline;
   color: #242a2c;
 }
@@ -203,8 +200,6 @@ div ul li a:hover {
   color: #8b9199;
 }
 
-
-
 .contact-content h6 {
   color: #8b9199;
   font-size: 15px;
@@ -247,15 +242,7 @@ iframe {
 
 
 
-
-
-
-
-
-/* TESTE HORRAIRE */
-
-
-/* PRESENT DAY STYLES */
+/* HORRAIRE */
 .open {
   color: green;
 }
@@ -264,10 +251,6 @@ iframe {
   color: red;
 }
 
-/* COMPONENT STYLES */
-
-
-
 .opening-hours_day {
   display: flex;
   justify-content: space-between;
@@ -275,3 +258,83 @@ iframe {
   list-style: none;
   border-bottom: solid 1px #FFFFFF33;
 }
+
+
+
+/* TEST CARD CONSEIL */
+.card {
+  margin: 5% 0%;
+}
+
+.card-body {
+  margin: 0% 0% 0% 3%;
+  padding: 6% 0%;
+}
+
+
+
+
+
+/* TEST read more */
+.read-more-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.read-more-btn {
+  color: #0984e3;
+  cursor: pointer;
+}
+
+.read-more-text {
+  display: none;
+}
+
+.read-more-text--show {
+  display: inline;
+}
+
+
+
+
+/* Teste card profile */
+
+.box-profil {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+
+
+  box-shadow: 0 8px 32px 0 rgba(194, 195, 212, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.title {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.desc {
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+

@@ -20,14 +20,6 @@ window.addEventListener('scroll', () => {
 
 
 
-
-
-
-
-
-
-
-
 // HORRAIRE
 const weekday = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
 const presentDate = new Date();
@@ -45,7 +37,7 @@ function checkDay() {
     if (presentDay == 'Samedi' || presentDay == 'Dimanche' || presentDay == 'Mercredi') {
         showDay.classList.add('closed');
     } else {
-        if (presentTime >= 9 && presentTime < 17) {
+        if (presentTime >= 8 && presentTime < 20) {
             showDay.classList.add('open');
         } else {
             showDay.classList.add('closed');
@@ -55,14 +47,29 @@ function checkDay() {
 checkDay();
 
 
+// Read More
+const parentContainer = document.querySelector('.read-more-container');
 
-/* TEST */
+parentContainer.addEventListener('click', event => {
 
-// const presentDay = 'Saturday';
-// const presentTime = 16;
+    const current = event.target;
 
-// showDay.classList.add('color');
-// document.write(weekday[1]);
-// document.write(presentTime);
-// document.write(presentDay);
-// document.write(showDay);  
+    const isReadMoreBtn = current.className.includes('read-more-btn');
+
+    if (!isReadMoreBtn) return;
+
+    const currentText = event.target.parentNode.querySelector('.read-more-text');
+
+    currentText.classList.toggle('read-more-text--show');
+
+    current.textContent = current.textContent.includes('Lire la suite...') ? "Lire moins..." : "Lire la suite...";
+
+})
+
+
+
+
+
+
+
+
