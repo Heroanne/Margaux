@@ -299,7 +299,7 @@ iframe {
 
 /* Teste card profile */
 
-.box-profil {
+.card-profil {
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
@@ -309,32 +309,76 @@ iframe {
   border-radius: 5px;
   margin-bottom: 50px;
 
-
+  /* Glassmorph */
   box-shadow: 0 8px 32px 0 rgba(194, 195, 212, 0.37);
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
 
-.avatar {
-  border-radius: 50%;
-  width: 200px;
+.img-profil {
+  width: 100%;
 }
 
-.title {
+.card-profil:hover {
+  transform: translateY(-0.5rem) scale(1.03);
+}
+
+.top-section {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 40px;
   color: #fff;
-  font-size: 24px;
-  letter-spacing: 2px;
-  text-align: center;
+  line-height: 1;
+  opacity: 0.8;
 }
 
-.desc {
+.name span {
+  background: #333;
+  padding: 0 5px 5px 5px;
+}
+
+.info-section {
+  padding: 0 40px 10px;
   color: #fff;
-  font-size: 15px;
-  letter-spacing: 2px;
-  text-align: center;
+  margin-top: 10px;
+}
+
+/* Souligné le début */
+.h2-profil:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 40px;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 
+
+/* Technologie */
+
+/* Grand écran */
+.carousel-techno {
+    width: 50%;
+}
+
+/* Petit écran */
+@media screen and (max-width: 992px) {
+  .carousel-techno {
+    width: 100%;
+  }
+
+}
