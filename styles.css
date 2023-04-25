@@ -275,7 +275,7 @@ iframe {
 
 
 
-/* TEST read more */
+/* read more */
 .read-more-container {
   display: flex;
   flex-direction: column;
@@ -291,6 +291,28 @@ iframe {
 }
 
 .read-more-text--show {
+  display: inline;
+}
+
+
+
+
+/* TEST 2 read more */
+.read-more-container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.read-more-btn2 {
+  color: #0984e3;
+  cursor: pointer;
+}
+
+.read-more-text2 {
+  display: none;
+}
+
+.read-more-text--show2 {
   display: inline;
 }
 

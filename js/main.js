@@ -67,6 +67,26 @@ parentContainer.addEventListener('click', event => {
 })
 
 
+// Teste 2éme btn read more
+const parentContainer2 = document.querySelector('.read-more-container2');
+
+parentContainer2.addEventListener('click', event => {
+
+    const current2 = event.target;
+
+    const isReadMoreBtn2 = current2.className.includes('read-more-btn2');
+
+    if (!isReadMoreBtn2) return;
+
+    const currentText = event.target.parentNode.querySelector('.read-more-text2');
+
+    currentText.classList.toggle('read-more-text--show2');
+
+    current2.textContent = current2.textContent.includes('Lire la suite...') ? "Lire moins..." : "Lire la suite...";
+
+})
+
+
 
 
 
